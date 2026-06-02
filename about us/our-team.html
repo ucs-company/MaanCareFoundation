@@ -120,15 +120,79 @@
   </nav>
 
   <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#home" onclick="closeMob()">Home</a>
-    <a href="#about" onclick="closeMob()">About Us</a>
-    <a href="#projects" onclick="closeMob()">Projects</a>
-    <a href="#team" onclick="closeMob()">Get Involved</a>
-    <a href="#media"onclick="closeMob()">Media </a>
-    <a href="#contact" onclick="closeMob()">Contact</a>
-    <a href="#donate" class="mob-donate" onclick="closeMob()">Donate Now</a>
+  <!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+
+  <a href="../index.html" onclick="closeMob()">Home</a>
+
+  <!-- About Us Dropdown -->
+  <div class="mob-dropdown">
+    <button type="button" class="mob-drop-btn">
+      About Us
+      <i class="fas fa-chevron-down"></i>
+    </button>
+
+    <div class="mob-drop-content">
+      <a href="our-story.html" onclick="closeMob()">Our Story</a>
+      <a href="our-team.html" onclick="closeMob()">Our Team</a>
+      <a href="legal-certificates.html" onclick="closeMob()">Legal Certificates</a>
+    </div>
   </div>
+
+  
+  <!-- Projects -->
+  <div class="mob-dropdown">
+    <button type="button" class="mob-drop-btn">
+      Projects <i class="fas fa-chevron-down"></i>
+    </button>
+
+    <div class="mob-drop-content">
+      <a href="../projects/poshan.html" onclick="closeMob()">Project Poshan</a>
+      <a href="../projects/gyaan.html" onclick="closeMob()">Project Gyaan</a>
+      <a href="../projects/sakhi.html" onclick="closeMob()">Project Sakhi</a>
+      <a href="../projects/swasth.html" onclick="closeMob()">Project Swasth</a>
+      <a href="../projects/pashu.html" onclick="closeMob()">Project Pashu</a>
+      <a href="../projects/Paryavaran.html" onclick="closeMob()">Project Paryavaran</a>
+    </div>
+  </div>
+
+ <!-- Get Involved -->
+
+  <div class="mob-dropdown">
+  <button type="button" class="mob-drop-btn">
+    Get Involved <i class="fas fa-chevron-down"></i>
+  </button>
+
+  <div class="mob-drop-content">
+    <a href="../get-involved/individual-support.html" onclick="closeMob()">Individual Support</a>
+    <a href="../get-involved/corporate-partnership.html" onclick="closeMob()">Corporate Partnership</a>
+    <a href="../get-involved/donate-online.html" onclick="closeMob()">Donate Online</a>
+    <a href="../get-involved/career.html" onclick="closeMob()">Career</a>
+  </div>
+</div>
+
+
+ <!-- Media-->
+
+  <a href="#media" onclick="closeMob()">Media</a>
+
+ <!-- Contact -->
+
+<div class="mob-dropdown">
+  <button type="button" class="mob-drop-btn">
+    Contact <i class="fas fa-chevron-down"></i>
+  </button>
+
+  <div class="mob-drop-content">
+    <a href="../contact/get-in-touch.html" onclick="closeMob()">Get In Touch</a>
+    <a href="../contact/privacy-policy.html" onclick="closeMob()">Privacy Policy</a>
+  </div>
+</div>
+
+  <a href="#donate" class="mob-donate" onclick="closeMob()">Donate Now</a>
+
+</div>
+
 
   <br><br>
 
@@ -304,11 +368,18 @@
         <a href="career.html">Career</a>
         </div>
 
-        <div class="footer-links">
-        <h5>Media</h5>
-        <a href="celebrity-events.html">Celebrity Events</a>
+          <!-- <div class="footer-links"> -->
+        <!-- <h5>Media</h5> -->
+        <!--<a href="celebrity-events.html">Celebrity Events</a>
         <a href="press-related.html">Press Related</a>
-        <a href="awards.html">Awards</a>
+        <a href="awards.html">Awards</a>-->
+        <!-- </div> -->
+
+         <div class="footer-links">
+        <h5>Contact</h5>
+         <a href="../contact/get-in-touch.html">Get In Touch</a>
+          <a href="../contact/privacy-policy.html">Privacy Policy</a>
+       
         </div>
 
         <div class="footer-contact">
@@ -322,7 +393,7 @@
         <!-- GPay QR Section -->
         <div class="gpay-qr">
         <p><i class="fas fa-qrcode"></i> Scan & Pay via GPay</p>
-        <img src="images/gpay-qr.png" alt="GPay QR Code" class="gpay-img">
+        <img src="gpay-qr.jpeg" alt="GPay QR Code" class="gpay-img">
         </div>
 
 
@@ -332,7 +403,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 MANN CARE FOUNDATION. All Rights Reserved. | Designed with <i class="fas fa-heart"></i> for a better tomorrow.</p>
+      <p>© 2026 MANN CARE FOUNDATION. All Rights Reserved. | Designed with <i class="fas fa-heart"></i> for a better tomorrow.</p>
     </div>
   </footer>
 
@@ -347,7 +418,9 @@
     </div>
   </div>
 
- 
+ <a class="whatsapp" href="https://wa.me/917039006300" target="_blank">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
 <script src="our-team.js"></script>
 </body>
 </html>

@@ -1262,7 +1262,7 @@ background: linear-gradient(
 
 .gpay-img{
   width:120px;
-  height:120px;
+  height:220px;
   object-fit:cover;
   border-radius:10px;
   margin-top:5px;
@@ -1457,3 +1457,33 @@ background: linear-gradient(
   }
 }
 
+/* whatsapp  */
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 55px;
+  height: 55px;
+
+  background: #25D366;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  font-size: 26px;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  text-decoration: none;
+
+  transition: 0.3s ease;
+  z-index: 9999;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+}
