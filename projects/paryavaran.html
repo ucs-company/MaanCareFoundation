@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MANN CARE FOUNDATION – Empowering Lives</title>
+  <link rel="stylesheet" href="poshan.css" />
+   <link rel="stylesheet" href="../style.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Floating particles -->
+  <div class="particles" id="particles"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="logo-wrap">
+        <div class="logo-icon">
+          <img src="logo.jpeg"
+               alt="MANN CARE FOUNDATION Logo"
+               onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex'"/>
+          <div id="logo-fallback" class="logo-fallback" style="display:none">
+            <span></span>
+          </div>
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">MANN CARE </span>
+          <span class="logo-sub">FOUNDATION</span>
+        </div>
+      </div>
+      <!--<ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>-->
+      <ul class="nav-links">
+
+  <li><a href="../index.html">Home</a></li>
+
+  <!-- DROPDOWN START -->
+  <li class="dropdown">
+    <a href="#about">About us</a>
+
+    <ul class="dropdown-menu">
+     <li><a href="../about us/our-store.html">Our Story</a></li>
+      <li><a href="../about us/our-team.html">Our Team</a></li>
+      <li><a href="../about us/legal-certificate.html">Legal Certificate</a></li>
+    </ul>
+  </li>
+  <!-- DROPDOWN END -->
+  <!-- PROJECT DROPDOWN START -->
+<li class="dropdown">
+  <a href="#projects">Projects </a>
+
+  <ul class="dropdown-menu">
+     <li><a href="poshan.html">Project Poshan</a></li>
+    <li><a href="gyaan.html">Project Gyaan</a></li>
+    <li><a href="sakhi.html">Project Sakhi</a></li>
+    <li><a href="swasth.html">Project Swasth</a></li>
+    <li><a href="pashu.html">Project Pashu</a></li>
+    <li><a href="paryavaran.html">Project Paryavaran</a></li>
+  </ul>
+</li>
+<!-- PROJECT DROPDOWN END -->
+
+
+
+<!-- GET INVOLVED DROPDOWN START -->
+<li class="dropdown">
+  <a href="#get-involved">Get Involved </a>
+
+  <ul class="dropdown-menu">
+   <li><a href="../get-involved/individual-support.html">Individual Support</a></li>
+    <li><a href="../get-involved/corporate-partnership.html">Corporate Partnership</a></li>
+    <li><a href="../get-involved/donate-online.html">Donate Online</a></li>
+    <li><a href="../get-involved/career.html">Career</a></li>
+  </ul>
+</li>
+<!-- GET INVOLVED DROPDOWN END -->
+
+
+
+  <!-- MEDIA DROPDOWN START -->
+<li class="dropdown">
+  <a href="#media">Media </a>
+  <ul class="dropdown-menu">
+    <li><a href="celebrity-events.html">Celebrity Events</a></li>
+    <li><a href="press-related.html">Press Related</a></li>
+    <li><a href="awards.html">Awards</a></li>
+  </ul>
+</li>
+<!-- MEDIA DROPDOWN END -->
+
+
+  <!-- CONTACT DROPDOWN START -->
+<li class="dropdown">
+  <a href="#contact">Contact </a>
+
+  <ul class="dropdown-menu">
+    <li><a href="get-in-touch.html">Get In Touch</a></li>
+    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+  </ul>
+</li>
+<!-- CONTACT DROPDOWN END -->
+
+</ul>
+
+      <a href="#donate" class="nav-donate">
+        <i class="fas fa-heart"></i> Donate Now
+      </a>
+      <button class="burger" id="burger">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" onclick="closeMob()">Home</a>
+    <a href="#about" onclick="closeMob()">About Us</a>
+    <a href="#projects" onclick="closeMob()">Projects</a>
+    <a href="#team" onclick="closeMob()">Get Involved</a>
+    <a href="#media"onclick="closeMob()">Media </a>
+    <a href="#contact" onclick="closeMob()">Contact</a>
+    <a href="#donate" class="mob-donate" onclick="closeMob()">Donate Now</a>
+  </div>
+
+  <br><br>
+
+
+<!-- ===== HERO IMAGE ===== -->
+<section class="mc-hero-slider">
+
+  <div class="mc-slide">
+
+    <picture>
+      <source media="(max-width:768px)" srcset="images/mobile-slide2.jpeg">
+      <img src="images/hero2.jpeg" alt="Hero Image">
+    </picture>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PROJECT PARYAVARAN SECTION
+========================= -->
+<section class="pp-hero-section">
+
+  <div class="pp-container">
+
+    <div class="pp-badge">
+      Save Nature Today
+    </div>
+
+    <h1 class="pp-main-title">
+      Project Paryavaran
+    </h1>
+
+    <p class="pp-subtitle">
+      Protecting Nature, Preserving Resources & Building A Sustainable Future
+    </p>
+
+    <div class="pp-hero-card">
+      <div class="pp-card-content">
+        <h2>Nature Is The Foundation Of Life</h2>
+        <p>
+          Project Paryavaran is an environmental conservation and sustainability
+          initiative dedicated to protecting, preserving, and restoring our natural
+          ecosystem. Through tree plantation, environmental awareness, waste management,
+          and water conservation efforts, the initiative inspires communities to
+          embrace sustainable living and safeguard the planet for future generations.
+        </p>
+
+        <a href="#pp-impact" class="pp-btn">
+          Explore Impact
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="pp-about-section">
+
+  <div class="pp-container">
+
+    <div class="pp-section-head">
+      <span>About The Initiative</span>
+      <h2>Creating Greener Communities Through Action</h2>
+    </div>
+
+    <div class="pp-about-grid">
+
+      <div class="pp-about-box">
+        <h3>Our Mission</h3>
+        <p>
+          Project Paryavaran aims to promote environmental conservation,
+          sustainability, and responsible living practices that protect air,
+          water, land, and biodiversity while encouraging communities to
+          actively participate in preserving nature.
+        </p>
+      </div>
+
+      <div class="pp-about-box">
+        <h3>Why It Matters</h3>
+        <p>
+          Climate change, pollution, deforestation, and water scarcity are
+          growing challenges affecting ecosystems and communities. Project
+          Paryavaran addresses these concerns through awareness, conservation,
+          and collective environmental action.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SERVICES -->
+<section class="pp-support-section">
+
+  <div class="pp-container">
+
+    <div class="pp-section-head">
+      <span>What We Do</span>
+      <h2>Environmental Conservation Programs</h2>
+    </div>
+
+    <div class="pp-support-grid">
+
+      <div class="pp-support-card">
+        <div class="pp-icon">🌳</div>
+        <h3>Tree Plantation</h3>
+        <p>
+          Increasing green cover through plantation drives in schools,
+          communities, and public spaces to improve environmental health.
+        </p>
+      </div>
+
+      <div class="pp-support-card">
+        <div class="pp-icon">♻️</div>
+        <h3>Waste Management</h3>
+        <p>
+          Promoting waste segregation, reducing plastic usage, and encouraging
+          sustainable alternatives for cleaner surroundings.
+        </p>
+      </div>
+
+      <div class="pp-support-card">
+        <div class="pp-icon">📚</div>
+        <h3>Environmental Education</h3>
+        <p>
+          Awareness programs, workshops, and campaigns that encourage eco-friendly
+          habits and climate responsibility.
+        </p>
+      </div>
+
+      <div class="pp-support-card">
+        <div class="pp-icon">💧</div>
+        <h3>Water Conservation</h3>
+        <p>
+          Promoting rainwater harvesting, water-saving practices, and protection
+          of natural water resources.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- BENEFICIARIES -->
+<section class="pp-beneficiary-section">
+
+  <div class="pp-container">
+
+    <div class="pp-section-head">
+      <span>Who Benefits</span>
+      <h2>Creating A Better Environment For All</h2>
+    </div>
+
+    <div class="pp-beneficiary-grid">
+
+      <div class="pp-beneficiary-card">🌱 Future Generations</div>
+
+      <div class="pp-beneficiary-card">🏘️ Local Communities</div>
+
+      <div class="pp-beneficiary-card">🎓 Students & Youth</div>
+
+      <div class="pp-beneficiary-card">🌳 Urban & Rural Ecosystems</div>
+
+      <div class="pp-beneficiary-card">🐦 Wildlife & Biodiversity</div>
+
+      <div class="pp-beneficiary-card">🌍 Society As A Whole</div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- IMPACT -->
+<section class="pp-impact-section" id="pp-impact">
+
+  <div class="pp-container">
+
+    <div class="pp-section-head">
+      <span>Impact Vision</span>
+      <h2>Building A Cleaner, Greener & Sustainable Planet</h2>
+    </div>
+
+    <div class="pp-impact-content">
+
+      <div class="pp-impact-card">
+        <h3>Greener Communities</h3>
+        <p>
+          Enhancing green cover, improving air quality, and restoring ecological
+          balance through tree plantation and conservation efforts.
+        </p>
+      </div>
+
+      <div class="pp-impact-card">
+        <h3>Environmental Awareness</h3>
+        <p>
+          Inspiring individuals and communities to adopt eco-friendly habits
+          and become responsible environmental stewards.
+        </p>
+      </div>
+
+      <div class="pp-impact-card">
+        <h3>Sustainable Future</h3>
+        <p>
+          Encouraging responsible use of natural resources and reducing ecological
+          impact for generations to come.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="pp-cta-section">
+
+  <div class="pp-container">
+
+    <h2>Join The Mission To Save Nature Today</h2>
+
+    <p>
+      Every tree planted, every drop of water saved, and every eco-friendly action
+      contributes to a healthier environment. Together, we can create a greener,
+      cleaner, and more sustainable future for all.
+    </p>
+
+    <a href="#donate" class="pp-btn">
+      Support Project Paryavaran
+    </a>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== FOOTER ===== -->
+<section>
+<div class="donation-strip">
+
+  <a href="donate.html" class="item">
+    <div class="icon-circle">
+      <img src="../images/donate.png" alt="Donate">
+    </div>
+    <span>Donate Now</span>
+  </a>
+
+  <a href="80g.html" class="item">
+    <div class="icon-circle">
+      <img src="../images/80g.png" alt="80G">
+    </div>
+    <span>80G 50% Tax Exemption</span>
+  </a>
+
+  <a href="secure.html" class="item">
+    <div class="icon-circle">
+      <img src="../images/secure.png" alt="Secure">
+    </div>
+    <span>Safe & Secure</span>
+  </a>
+
+  <a href="contact.html" class="item">
+    <div class="icon-circle">
+      <img src="../images/contact.png" alt="Contact">
+    </div>
+    <span>Contact Us</span>
+  </a>
+
+</div>
+
+
+
+</section>
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="logo-wrap">
+             <div class="logo-icon">
+      <img src="logo.jpeg"
+           alt="MANN CARE FOUNDATION Logo"
+           onerror="this.style.display='none'; document.getElementById('logo-fallback-footer').style.display='flex'"/>
+
+      <div id="logo-fallback-footer" class="logo-fallback" style="display:none">
+        <span></span>
+      </div>
+    </div>
+
+           
+            <div class="logo-text">
+              <span class="logo-main"style="color:#ffffff;">MANN CARE </span>
+              <span class="logo-sub">FOUNDATION</span>
+            </div>
+          </div>
+          <p>Empowering women and children from underprivileged communities through compassion, care, and action.</p>
+          <div class="footer-socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h5>Quick Links</h5>
+         <a href="poshan.html">Project Poshan</a>
+          <a href="gyaan.html">Project Gyaan</a>
+          <a href="sakhi.html">Project Sakhi</a>
+          <a href="swasth.html">Project Swasth</a>
+          <a href="pashu.html">Project Pashu</a>
+          <a href="paryavaran.html">Project Paryavaran</a>
+        </div>
+
+        <div class="footer-links">
+        <h5>About Us</h5>
+      <a href="../about us/our-store.html">Our Story</a>
+        <a href="../about us/our-team.html">Our Team</a>
+        <a href="../about us/legal-certificate.html">Legal Certificate</a>
+        </div>
+
+
+        <div class="footer-links">
+          <h5>Our Projects</h5>
+          <a href="#projects">Project Poshan</a>
+          <a href="#projects">Project Gyaan</a>
+          <a href="#projects">Project Sakhi</a>
+          <a href="#projects">Project Swasth</a>
+          <a href="#projects">Project Pashu</a>
+        </div>
+        
+
+        <div class="footer-links">
+        <h5>Get Involved</h5>
+
+        <a href="../get-involved/individual-support.html">Individual Support</a>
+        <a href="../get-involved/corporate-partnership.html">Corporate Partnership</a>
+        <a href="../get-involved/donate-online.html">Donate Online</a>
+        <a href="../get-involved/career.html">Career</a>
+        </div>
+
+        <div class="footer-links">
+        <h5>Media</h5>
+        <a href="celebrity-events.html">Celebrity Events</a>
+        <a href="press-related.html">Press Related</a>
+        <a href="awards.html">Awards</a>
+        </div>
+
+        <div class="footer-contact">
+          <h5>Contact Info</h5>
+          <p><i class="fas fa-phone"></i> +91 70390 06300</p>
+          <p><i class="fas fa-envelope"></i> maanfoundation.ngo@gmail.com</p>
+          <p><i class="fas fa-location-dot"></i> Malad (West), Mumbai – 400064</p>
+          <a href="#donate" class="footer-donate-btn"><i class="fas fa-heart"></i>❤ Donate Now</a>
+        </div>
+
+        <!-- GPay QR Section -->
+        <div class="gpay-qr">
+        <p><i class="fas fa-qrcode"></i> Scan & Pay via GPay</p>
+        <img src="images/gpay-qr.png" alt="GPay QR Code" class="gpay-img">
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 MANN CARE FOUNDATION. All Rights Reserved. | Designed with <i class="fas fa-heart"></i> for a better tomorrow.</p>
+    </div>
+  </footer>
+
+  <!-- Donate Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+      <div class="modal-icon"><i class="fas fa-heart"></i></div>
+      <h3>Thank You for Your Kindness!</h3>
+      <p id="modalMsg">Your generous donation will help transform lives. We will reach out to confirm your contribution.</p>
+      <button class="btn-primary" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+ 
+<script src="poshan.js"></script>
+</body>
+</html>

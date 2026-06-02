@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MANN CARE FOUNDATION – Empowering Lives</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Floating particles -->
+  <div class="particles" id="particles"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="logo-wrap">
+        <div class="logo-icon">
+          <img src="logo.jpeg"
+               alt="MANN CARE FOUNDATION Logo"
+               onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex'"/>
+          <div id="logo-fallback" class="logo-fallback" style="display:none">
+            <span></span>
+          </div>
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">MANN CARE </span>
+          <span class="logo-sub">FOUNDATION</span>
+        </div>
+      </div>
+      <!--<ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>-->
+      <ul class="nav-links">
+
+  <li><a href="#home">Home</a></li>
+
+  <!-- DROPDOWN START -->
+  <li class="dropdown">
+    <a href="#about">About us</a>
+
+    <ul class="dropdown-menu">
+      <li><a href="/about us/our-store.html">Our Story</a></li>
+      <li><a href="/about us/our-team.html">Our Team</a></li>
+      <li><a href="/about us/legal-certificate.html">Legal Certificate</a></li>
+    </ul>
+  </li>
+  <!-- DROPDOWN END -->
+  <!-- PROJECT DROPDOWN START -->
+<li class="dropdown">
+  <a href="#projects">Projects </a>
+
+  <ul class="dropdown-menu">
+    <li><a href="../projects/poshan.html">Project Poshan</a></li>
+    <li><a href="projects/gyaan.html">Project Gyaan</a></li>
+    <li><a href="projects/sakhi.html">Project Sakhi</a></li>
+    <li><a href="projects/swasth.html">Project Swasth</a></li>
+    <li><a href="projects/pashu.html">Project Pashu</a></li>
+    <li><a href="projects/Paryavaran.html">Project Paryavaran</a></li>
+  </ul>
+</li>
+<!-- PROJECT DROPDOWN END -->
+
+
+
+<!-- GET INVOLVED DROPDOWN START -->
+<li class="dropdown">
+  <a href="#get-involved">Get Involved </a>
+
+  <ul class="dropdown-menu">
+    <li><a href="../get-involved/individual-support.html">Individual Support</a></li>
+    <li><a href="../get-involved/corporate-partnership.html">Corporate Partnership</a></li>
+    <li><a href="../get-involved/donate-online.html">Donate Online</a></li>
+    <li><a href="../get-involved/career.html">Career</a></li>
+  </ul>
+</li>
+<!-- GET INVOLVED DROPDOWN END -->
+
+
+
+  <!-- MEDIA DROPDOWN START -->
+<li class="dropdown">
+  <a href="#media">Media </a>
+ <!-- <ul class="dropdown-menu">
+    <li><a href="celebrity-events.html">Celebrity Events</a></li>
+    <li><a href="press-related.html">Press Related</a></li>
+    <li><a href="awards.html">Awards</a></li>
+  </ul>-->
+</li>
+<!-- MEDIA DROPDOWN END -->
+
+
+  <!-- CONTACT DROPDOWN START -->
+<li class="dropdown">
+  <a href="#contact">Contact </a>
+
+  <ul class="dropdown-menu">
+    <li><a href="get-in-touch.html">Get In Touch</a></li>
+    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+  </ul>
+</li>
+<!-- CONTACT DROPDOWN END -->
+
+</ul>
+
+      <a href="#donate" class="nav-donate">
+        <i class="fas fa-heart"></i> Donate Now
+      </a>
+      <button class="burger" id="burger">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+
+  <a href="#home" onclick="closeMob()">Home</a>
+
+  <!-- About Us Dropdown -->
+  <div class="mob-dropdown">
+    <button type="button" class="mob-drop-btn">
+      About Us
+      <i class="fas fa-chevron-down"></i>
+    </button>
+
+    <div class="mob-drop-content">
+      <a href="our-story.html" onclick="closeMob()">Our Story</a>
+      <a href="our-team.html" onclick="closeMob()">Our Team</a>
+      <a href="legal-certificates.html" onclick="closeMob()">Legal Certificates</a>
+    </div>
+  </div>
+
+  
+  <!-- Projects -->
+  <div class="mob-dropdown">
+    <button type="button" class="mob-drop-btn">
+      Projects <i class="fas fa-chevron-down"></i>
+    </button>
+
+    <div class="mob-drop-content">
+      <a href="../projects/poshan.html" onclick="closeMob()">Project Poshan</a>
+      <a href="../projects/gyaan.html" onclick="closeMob()">Project Gyaan</a>
+      <a href="../projects/sakhi.html" onclick="closeMob()">Project Sakhi</a>
+      <a href="../projects/swasth.html" onclick="closeMob()">Project Swasth</a>
+      <a href="../projects/pashu.html" onclick="closeMob()">Project Pashu</a>
+      <a href="../projects/Paryavaran.html" onclick="closeMob()">Project Paryavaran</a>
+    </div>
+  </div>
+
+ <!-- Get Involved -->
+
+  <div class="mob-dropdown">
+  <button type="button" class="mob-drop-btn">
+    Get Involved <i class="fas fa-chevron-down"></i>
+  </button>
+
+  <div class="mob-drop-content">
+    <a href="../get-involved/individual-support.html" onclick="closeMob()">Individual Support</a>
+    <a href="../get-involved/corporate-partnership.html" onclick="closeMob()">Corporate Partnership</a>
+    <a href="../get-involved/donate-online.html" onclick="closeMob()">Donate Online</a>
+    <a href="../get-involved/career.html" onclick="closeMob()">Career</a>
+  </div>
+</div>
+
+
+ <!-- Media-->
+
+  <a href="#media" onclick="closeMob()">Media</a>
+
+ <!-- Contact -->
+
+<div class="mob-dropdown">
+  <button type="button" class="mob-drop-btn">
+    Contact <i class="fas fa-chevron-down"></i>
+  </button>
+
+  <div class="mob-drop-content">
+    <a href="get-in-touch.html" onclick="closeMob()">Get In Touch</a>
+    <a href="privacy-policy.html" onclick="closeMob()">Privacy Policy</a>
+  </div>
+</div>
+
+  <a href="#donate" class="mob-donate" onclick="closeMob()">Donate Now</a>
+
+</div>
+
+ <!-- ===== HERO slider ===== -->
+
+<section class="hero-slider">
+
+  <div class="slides">
+
+    <!-- Slide 1 -->
+    <div class="slide active">
+     <picture>
+    <source media="(max-width:768px)" srcset="images/mobile-slide1.jpeg">
+    <img src="images/heroslide1.jpeg" alt="">
+  </picture>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+      <picture>
+    <source media="(max-width:768px)" srcset="images/mobile-slide2.jpeg">
+      <img src="images/heroslide2.jpeg" alt="">
+      </picture>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+      <picture>
+    <source media="(max-width:768px)" srcset="images/mobile-slide3.jpeg">
+      <img src="images/heroslide3.jpeg" alt="">
+      </picture>
+    </div>
+
+  
+<!-- Slide 4 -->
+    <div class="slide">
+      <picture>
+    <source media="(max-width:768px)" srcset="images/mobile-slide4.jpeg">
+      <img src="images/heroslide4.jpeg" alt="">
+      </picture>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide">
+      <picture>
+    <source media="(max-width:768px)" srcset="images/mobile-slide5.jpeg">
+      <img src="images/heroslide5.jpeg" alt="">
+      </picture>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide">
+      <picture>
+    <source media="(max-width:768px)" srcset="images/mobile-slide6.jpeg">
+      <img src="images/heroslide6.jpeg" alt="">
+      </picture>
+    </div>
+    
+  </div>
+
+  <!-- Dots -->
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+</section>
+
+
+
+  <!-- ===== HERO ===== -->
+
+<section class="hero" id="home">
+
+  <div class="hero-content">
+
+    <!--<div class="hero-badge">
+      <i class="fas fa-star"></i> Non-Profit Organisation
+    </div>-->
+
+    <h1 class="hero-title">
+      Empowering<br/>
+      <span class="gradient-text">Women & Children</span><br/>
+      Across India
+    </h1>
+
+    <p class="hero-desc">
+      MANN CARE FOUNDATION transforms lives through nutrition, education,
+      health, hygiene & empowerment — reaching 7 states with compassion
+      in action.
+    </p>
+
+    <div class="hero-btns">
+      <a href="#donate" class="btn-primary">
+        <i class="fas fa-heart"></i> Donate Now
+      </a>
+
+      <a href="#about" class="btn-ghost">
+        Learn More <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+
+    <div class="hero-stats">
+
+
+      <div class="stat-card">
+        <span class="stat-num">6</span>
+        <span class="stat-lbl">Projects</span>
+      </div>
+
+      <div class="stat-divider"></div>
+
+      <div class="stat-card">
+        <span class="stat-num">∞</span>
+        <span class="stat-lbl">Impact</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- RIGHT SIDE IMAGE -->
+<div class="hero-image-box">
+  <img src="images/women-child.jpeg" alt="NGO Support" class="hero-main-image">
+</div>
+
+</section>
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-tag">Who We Are</div>
+      <h2 class="section-title">About <span class="gradient-text">MANN CARE FOUNDATION</span></h2>
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <div class="about-image-wrap">
+            <div class="about-img-placeholder">
+              <img src="images/about-us.jpeg" alt="MANN CARE FOUNDATION">
+              <!-- <i class="fas fa-hands-holding-heart"></i> -->
+            </div>
+            <div class="about-badge-float">
+              <i class="fas fa-award"></i>
+              <span>Trusted NGO</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-right reveal">
+          <p class="about-lead">
+            MANN CARE FOUNDATION is a compassionate non-profit committed to transforming lives of women and children from underprivileged and marginalized communities.
+          </p>
+          <p class="about-body">
+            Guided by empathy and driven by measurable impact, we adopt a holistic development approach that integrates nutrition, education, health, hygiene, and women empowerment to create sustainable change.
+          </p>
+          <div class="about-pillars">
+            <div class="pillar"><i class="fas fa-leaf"></i><span>Sustainable</span></div>
+            <div class="pillar"><i class="fas fa-users"></i><span>Community-First</span></div>
+            <div class="pillar"><i class="fas fa-heart"></i><span>Empathetic</span></div>
+            <div class="pillar"><i class="fas fa-chart-line"></i><span>Measurable Impact</span></div>
+          </div>
+          <div class="mv-cards">
+            <div class="mv-card">
+              <div class="mv-icon"><i class="fas fa-bullseye"></i></div>
+              <div>
+                <strong>Our Mission</strong>
+                <p>Addressing fundamental needs — nutritious food, quality education, menstrual hygiene, healthcare awareness, and self-reliance for women and children.</p>
+              </div>
+            </div>
+            <div class="mv-card">
+              <div class="mv-icon"><i class="fas fa-eye"></i></div>
+              <div>
+                <strong>Our Vision</strong>
+                <p>An inclusive society where every woman is empowered and every child is nourished, educated, and free from preventable illness and inequality.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-tag">What We Do</div>
+      <h2 class="section-title">Our <span class="gradient-text">Projects</span></h2>
+      <p class="section-sub">Five transformative initiatives, one powerful mission — to uplift every life we touch.</p>
+
+      <div class="projects-grid">
+
+        <!-- Poshan -->
+        <div class="proj-card reveal" data-tilt>
+          <div class="proj-top" style="--c:#f9a8d4">
+            <div class="proj-icon"><i class="fas fa-bowl-food"></i></div>
+            <div class="proj-num">01</div>
+          </div>
+          <div class="proj-body">
+            <h3>Project Poshan</h3>
+            <p class="proj-tag">Nutrition Support Initiative</p>
+            <p>Addressing hunger, malnutrition and food insecurity through Dry Ration Kits, Nutritious Cooked Meals, Healthy Snack Kits, and Refreshment Support for all needy individuals.</p>
+            <ul class="proj-list">
+              <li><i class="fas fa-check-circle"></i> Dry Ration Kits</li>
+              <li><i class="fas fa-check-circle"></i> Nutritious Cooked Meals</li>
+              <li><i class="fas fa-check-circle"></i> Healthy Snack Kits</li>
+              <li><i class="fas fa-check-circle"></i> Refreshment Support</li>
+            </ul>
+          </div>
+          <a href="#donate" class="proj-donate-btn"><i class="fas fa-heart"></i> Donate Now</a>
+        </div>
+
+        <!-- Gyaan -->
+        <div class="proj-card reveal" data-tilt>
+          <div class="proj-top" style="--c:#fda4af">
+            <div class="proj-icon"><i class="fas fa-book-open"></i></div>
+            <div class="proj-num">02</div>
+          </div>
+          <div class="proj-body">
+            <h3>Project Gyaan</h3>
+            <p class="proj-tag">Education Support Initiative</p>
+            <p>Ensuring inclusive, continuous, quality education for children from marginalized communities through academic and digital learning support.</p>
+            <ul class="proj-list">
+              <li><i class="fas fa-check-circle"></i> School Kits & Stationery</li>
+              <li><i class="fas fa-check-circle"></i> Digital Education Tools</li>
+              <li><i class="fas fa-check-circle"></i> Computer Literacy</li>
+              <li><i class="fas fa-check-circle"></i> Smart Classrooms</li>
+            </ul>
+          </div>
+          <a href="#donate" class="proj-donate-btn"><i class="fas fa-heart"></i> Donate Now</a>
+        </div>
+
+        <!-- Sakhi -->
+        <div class="proj-card reveal" data-tilt>
+          <div class="proj-top" style="--c:#f472b6">
+            <div class="proj-icon"><i class="fas fa-female"></i></div>
+            <div class="proj-num">03</div>
+          </div>
+          <div class="proj-body">
+            <h3>Project Sakhi</h3>
+            <p class="proj-tag">Women Empowerment Initiative</p>
+            <p>Empowering women holistically through skill development, livelihood training, hygiene support, and confidence-building at the grassroots level.</p>
+            <ul class="proj-list">
+              <li><i class="fas fa-check-circle"></i> Skill Development Training</li>
+              <li><i class="fas fa-check-circle"></i> Menstrual Hygiene Support</li>
+              <li><i class="fas fa-check-circle"></i> Financial Literacy</li>
+              <li><i class="fas fa-check-circle"></i> Leadership Development</li>
+            </ul>
+          </div>
+          <a href="#donate" class="proj-donate-btn"><i class="fas fa-heart"></i> Donate Now</a>
+        </div>
+
+        <!-- Swasth -->
+        <div class="proj-card reveal" data-tilt>
+          <div class="proj-top" style="--c:#fb7185">
+            <div class="proj-icon"><i class="fas fa-heart-pulse"></i></div>
+            <div class="proj-num">04</div>
+          </div>
+          <div class="proj-body">
+            <h3>Project Swasth</h3>
+            <p class="proj-tag">Health & Hygiene Initiative</p>
+            <p>Promoting preventive healthcare, hygiene awareness, and access to essential health support — including oral health, menstrual hygiene, and medical assistance.</p>
+            <ul class="proj-list">
+              <li><i class="fas fa-check-circle"></i> Health Awareness Sessions</li>
+              <li><i class="fas fa-check-circle"></i> Sanitary Pad Distribution</li>
+              <li><i class="fas fa-check-circle"></i> Oral Health for Children</li>
+              <li><i class="fas fa-check-circle"></i> Medical Case Support</li>
+            </ul>
+          </div>
+          <a href="#donate" class="proj-donate-btn"><i class="fas fa-heart"></i> Donate Now</a>
+        </div>
+
+        <!-- Pashu -->
+        <div class="proj-card reveal" data-tilt>
+          <div class="proj-top" style="--c:#f9a8d4">
+            <div class="proj-icon"><i class="fas fa-paw"></i></div>
+            <div class="proj-num">05</div>
+          </div>
+          <div class="proj-body">
+            <h3>Project Pashu</h3>
+            <p class="proj-tag">Animal Support Initiative</p>
+            <p>Dedicated to the care, protection, and well-being of animals — stray dogs, abandoned cattle, injured animals — with feeding drives, medical support, and community awareness.</p>
+            <ul class="proj-list">
+              <li><i class="fas fa-check-circle"></i> Regular Feeding Drives</li>
+              <li><i class="fas fa-check-circle"></i> Medical & Emergency Care</li>
+              <li><i class="fas fa-check-circle"></i> Seasonal Care Support</li>
+              <li><i class="fas fa-check-circle"></i> Community Engagement</li>
+            </ul>
+          </div>
+          <a href="#donate" class="proj-donate-btn"><i class="fas fa-heart"></i> Donate Now</a>
+        </div>
+
+        
+<!-- Paryavaran -->
+<div class="proj-card reveal" data-tilt>
+  <div class="proj-top" style="--c:#22c55e">
+    <div class="proj-icon"><i class="fas fa-leaf"></i></div>
+    <div class="proj-num">06</div>
+  </div>
+
+  <div class="proj-body">
+    <h3>Project Paryavaran</h3>
+    <p class="proj-tag">Environment & Sustainability Initiative</p>
+
+    <p>
+      Promoting environmental protection through tree plantation, cleanliness drives, and awareness programs to build a greener and healthier future for all.
+    </p>
+
+    <ul class="proj-list">
+      <li><i class="fas fa-check-circle"></i> Tree Plantation Drives</li>
+      <li><i class="fas fa-check-circle"></i> Cleanliness & Waste Management Campaigns</li>
+      <li><i class="fas fa-check-circle"></i> Plastic-Free Awareness Programs</li>
+      <li><i class="fas fa-check-circle"></i> Environmental Education for Students</li>
+    </ul>
+  </div>
+
+  <a href="#donate" class="proj-donate-btn">
+    <i class="fas fa-heart"></i> Donate Now
+  </a>
+</div>
+
+
+      </div>
+    </div>
+  </section>
+ <!-- ===== Cause you can Support ===== -->
+  <section class="support-section">
+  <div class="container">
+    
+    <h2 class="section-title">Cause you can Support</h2>
+
+    <div class="support-grid">
+
+      <div class="support-card">
+        <div class="icon">
+          <i class="fas fa-book"></i>
+        </div>
+        <h3>Education</h3>
+      </div>
+
+       <div class="support-card">
+        <div class="icon">
+          <i class="fas fa-apple-alt"></i>
+        </div>
+        <h3>Nutrition</h3>
+      </div>
+
+      <div class="support-card">
+        <div class="icon">
+          <i class="fas fa-user"></i>
+        </div>
+        <h3>Women Empowerment</h3>
+      </div>
+
+        <div class="support-card">
+        <div class="icon">
+          <i class="fas fa-ambulance"></i>
+        </div>
+        <h3>Health Care</h3>
+      </div>
+
+
+
+      <div class="support-card">
+        <div class="icon">
+          <i class="fas fa-home"></i>
+        </div>
+        <h3>Disaster Management</h3>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+
+
+
+
+
+  <!-- ===== WHERE WE ARE ===== -->
+  <!--<section class="states section">
+    <div class="container">
+      <div class="section-tag">Our Reach</div>
+      <h2 class="section-title">Where We <span class="gradient-text">Are</span></h2>
+      <p class="section-sub">MANN CARE FOUNDATION is actively working across 7 states in India.</p>
+      <div class="states-wrap reveal">
+        <div class="states-map">
+          <div class="map-placeholder">
+            <i class="fas fa-map-location-dot"></i>
+            <p>7 States &amp; Growing</p>
+          </div>
+        </div>
+        <div class="states-list">
+          <div class="state-item"><i class="fas fa-location-dot"></i> Maharashtra</div>
+          <div class="state-item"><i class="fas fa-location-dot"></i> Gujarat</div>
+          <div class="state-item"><i class="fas fa-location-dot"></i> Rajasthan</div>
+          <div class="state-item"><i class="fas fa-location-dot"></i> Madhya Pradesh</div>
+          <div class="state-item"><i class="fas fa-location-dot"></i> Uttar Pradesh</div>
+          <div class="state-item"><i class="fas fa-location-dot"></i> Bihar</div>
+          <div class="state-item"><i class="fas fa-location-dot"></i> Delhi NCR</div>
+        </div>
+      </div>
+    </div>
+  </section>-->
+
+ 
+
+  <!-- ===== DONATE ===== -->
+  <section class="donate section" id="donate">
+    <div class="donate-bg-shape"></div>
+    <div class="container">
+      <div class="donate-box reveal">
+        <div class="donate-left">
+          <div class="section-tag light">Make a Difference</div>
+          <h2>Join Hands With<br/><span class="gradient-text">MANN CARE FOUNDATION</span></h2>
+          <p>Become a reason someone lives with dignity, health, and hope. Every donation — big or small — creates a ripple of change that transforms lives.</p>
+          <div class="donate-features">
+            <div class="df"><i class="fas fa-shield-heart"></i><span>100% Transparent</span></div>
+            <div class="df"><i class="fas fa-receipt"></i><span>Tax Benefits Available</span></div>
+            <div class="df"><i class="fas fa-globe"></i><span>Nationwide Impact</span></div>
+          </div>
+        </div>
+        <div class="donate-right">
+          <h3>Choose Your Contribution</h3>
+          <div class="amount-grid">
+            <button class="amt-btn" onclick="selectAmt(this, '500')">₹500</button>
+            <button class="amt-btn active" onclick="selectAmt(this, '1000')">₹1,000</button>
+            <button class="amt-btn" onclick="selectAmt(this, '2500')">₹2,500</button>
+            <button class="amt-btn" onclick="selectAmt(this, '5000')">₹5,000</button>
+          </div>
+          <div class="custom-amt">
+            <input type="number" id="customAmt" placeholder="Enter custom amount (₹)" />
+          </div>
+          <div class="project-select-wrap">
+            <label>Choose Project (optional)</label>
+            <select id="projSelect">
+              <option value="">-- All Projects --</option>
+              <option>Project Poshan</option>
+              <option>Project Gyaan</option>
+              <option>Project Sakhi</option>
+              <option>Project Swasth</option>
+              <option>Project Pashu</option>
+              <option>Project Paryavaran</option>
+            </select>
+          </div>
+          <button class="donate-cta" onclick="handleDonate()">
+            <i class="fas fa-heart"></i> Donate Now
+          </button>
+          <p class="donate-note">Secured payment. Your trust is our priority.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PARTNERS ===== -->
+  <section class="partners section">
+  <div class="container">
+
+    <div class="section-tag">Together We Grow</div>
+    <h2 class="section-title">Our <span class="gradient-text">Partners</span></h2>
+
+    <div class="partners-slider">
+
+  <div class="partner-group active">
+    <div class="partner-logo"><img src="images/11.png"></div>
+    <div class="partner-logo"><img src="images/12.png"></div>
+    <div class="partner-logo"><img src="images/13.png"></div>
+    <div class="partner-logo"><img src="images/14.png"></div>
+  </div>
+
+  <div class="partner-group">
+    <div class="partner-logo"><img src="images/15.png"></div>
+    <div class="partner-logo"><img src="images/16.png"></div>
+    <div class="partner-logo"><img src="images/17.png"></div>
+    <div class="partner-logo"><img src="images/18.png"></div>
+  </div>
+
+</div>
+</section>
+
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-tag">Get In Touch</div>
+      <h2 class="section-title">Contact <span class="gradient-text">Us</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="ci-card">
+            <div class="ci-icon"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <strong>Address</strong>
+              <p>Office No. 1708, One World, S.V.Road, Near N. M. High School, Malad (West), Mumbai – 400064</p>
+            </div>
+          </div>
+          <div class="ci-card">
+            <div class="ci-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <strong>Phone</strong>
+              <p><a href="tel:+917039006300">+91 70390 06300</a><br/><a href="tel:+917039006400">+91 70390 06400</a></p>
+            </div>
+          </div>
+          <div class="ci-card">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:manncarefoundation@gmail.com">manncarefoundation@gmail.com</a><br/><a href="mailto:manncarefoundation@gmail.com">info.manncarefoundation@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="ci-card">
+            <div class="ci-icon"><i class="fas fa-globe"></i></div>
+            <div>
+              <strong>Website</strong>
+              <p><a href="https://maancarefoundation.org" target="_blank">maancarefoundation.org</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form reveal">
+          <div class="cf-group">
+            <input type="text" placeholder="Your Full Name" class="cf-input"/>
+          </div>
+          <div class="cf-group">
+            <input type="email" placeholder="Email Address" class="cf-input"/>
+          </div>
+          <div class="cf-group">
+            <input type="tel" placeholder="Phone Number" class="cf-input"/>
+          </div>
+          <div class="cf-group">
+            <textarea placeholder="Your Message" class="cf-input" rows="4"></textarea>
+          </div>
+          <button class="cf-submit" onclick="submitForm(this)">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ===== FOOTER ===== -->
+<section>
+<div class="donation-strip">
+
+  <a href="donate.html" class="item">
+    <div class="icon-circle">
+      <img src="images/donate.png" alt="Donate">
+    </div>
+    <span>Donate Now</span>
+  </a>
+
+  <a href="80g.html" class="item">
+    <div class="icon-circle">
+      <img src="images/80g.png" alt="80G">
+    </div>
+    <span>80G 50% Tax Exemption</span>
+  </a>
+
+  <a href="secure.html" class="item">
+    <div class="icon-circle">
+      <img src="images/secure.png" alt="Secure">
+    </div>
+    <span>Safe & Secure</span>
+  </a>
+
+  <a href="contact.html" class="item">
+    <div class="icon-circle">
+      <img src="images/contact.png" alt="Contact">
+    </div>
+    <span>Contact Us</span>
+  </a>
+
+</div>
+
+
+
+</section>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="logo-wrap">
+             <div class="logo-icon">
+      <img src="logo.jpeg"
+           alt="MANN CARE FOUNDATION Logo"
+           onerror="this.style.display='none'; document.getElementById('logo-fallback-footer').style.display='flex'"/>
+
+      <div id="logo-fallback-footer" class="logo-fallback" style="display:none">
+        <span></span>
+      </div>
+    </div>
+
+           
+            <div class="logo-text">
+              <span class="logo-main"style="color:#ffffff;">MANN CARE </span>
+              <span class="logo-sub">FOUNDATION</span>
+            </div>
+          </div>
+          <p>Empowering women and children from underprivileged communities through compassion, care, and action.</p>
+          <div class="footer-socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/mann.care.foundation?igsh=Z2h3aGUxNGxnbW1u" target="_blank">
+    <i class="fab fa-instagram"></i>
+</a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h5>Quick Links</h5>
+          <a href="#about">About Us</a>
+          <a href="#projects">Projects</a>
+          <a href="#team">Get Involved</a>
+          <a href="#donate">Media</a>
+          <a href="#contact">Contact</a>
+          <a href="#donate">Donate</a>
+        </div>
+
+        <div class="footer-links">
+        <h5>About Us</h5>
+        <a href="our-store.html">Our Story</a>
+        <a href="our-team.html">Our Team</a>
+        <a href="legal-certificate.html">Legal Certificate</a>
+        </div>
+
+
+        <div class="footer-links">
+          <h5>Our Projects</h5>
+          <a href="projects/poshan.html">Project Poshan</a>
+          <a href="projects/gyaan.html">Project Gyaan</a>
+          <a href="projects/sakhi.html">Project Sakhi</a>
+          <a href="projects/swasth.html">Project Swasth</a>
+          <a href="projects/pashu.html">Project Pashu</a>
+          <a href="projects/Paryavaran.html">Project Paryavaran</a>
+        </div>
+        
+
+        <div class="footer-links">
+        <h5>Get Involved</h5>
+
+        <a href="individual-support.html">Individual Support</a>
+        <a href="corporate-partnership.html">Corporate Partnership</a>
+        <a href="donate-online.html">Donate Online</a>
+        <a href="career.html">Career</a>
+        </div>
+
+        <div class="footer-links">
+        <h5>Media</h5>
+        <a href="celebrity-events.html">Celebrity Events</a>
+        <a href="press-related.html">Press Related</a>
+        <a href="awards.html">Awards</a>
+        </div>
+
+        <div class="footer-contact">
+          <h5>Contact Info</h5>
+          <p><i class="fas fa-phone"></i> +91 70390 06300</p>
+          <p><i class="fas fa-envelope"></i> maanfoundation.ngo@gmail.com</p>
+          <p><i class="fas fa-location-dot"></i> Malad (West), Mumbai – 400064</p>
+          <a href="#donate" class="footer-donate-btn"><!--<i class="fas fa-heart">--></i>❤ Donate Now</a>
+        
+
+        </div>
+
+        <!-- GPay QR Section -->
+        <div class="gpay-qr">
+        <p><i class="fas fa-qrcode"></i> Scan & Pay via GPay</p>
+        <img src="images/gpay-qr.png" alt="GPay QR Code" class="gpay-img">
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 MANN CARE FOUNDATION. All Rights Reserved. | Designed with <i class="fas fa-heart"></i> for a better tomorrow.</p>
+    </div>
+  </footer>
+
+  <!-- Donate Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+      <div class="modal-icon"><i class="fas fa-heart"></i></div>
+      <h3>Thank You for Your Kindness!</h3>
+      <p id="modalMsg">Your generous donation will help transform lives. We will reach out to confirm your contribution.</p>
+      <button class="btn-primary" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+<!-- <Shital> -->
