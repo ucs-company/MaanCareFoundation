@@ -119,15 +119,79 @@
   </nav>
 
   <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#home" onclick="closeMob()">Home</a>
-    <a href="#about" onclick="closeMob()">About Us</a>
-    <a href="#projects" onclick="closeMob()">Projects</a>
-    <a href="#team" onclick="closeMob()">Get Involved</a>
-    <a href="#media"onclick="closeMob()">Media </a>
-    <a href="#contact" onclick="closeMob()">Contact</a>
-    <a href="#donate" class="mob-donate" onclick="closeMob()">Donate Now</a>
+  <!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+
+  <a href="#home" onclick="closeMob()">Home</a>
+
+  <!-- About Us Dropdown -->
+  <div class="mob-dropdown">
+    <button type="button" class="mob-drop-btn">
+      About Us
+      <i class="fas fa-chevron-down"></i>
+    </button>
+
+    <div class="mob-drop-content">
+      <a href="../about us/our-store.html" onclick="closeMob()">Our Story</a>
+      <a href="../about us/our-team.html" onclick="closeMob()">Our Team</a>
+      <a href="../about us/legal-certificates.html" onclick="closeMob()">Legal Certificates</a>
+    </div>
   </div>
+
+  
+  <!-- Projects -->
+  <div class="mob-dropdown">
+    <button type="button" class="mob-drop-btn">
+      Projects <i class="fas fa-chevron-down"></i>
+    </button>
+
+    <div class="mob-drop-content">
+      <a href="poshan.html" onclick="closeMob()">Project Poshan</a>
+      <a href="gyaan.html" onclick="closeMob()">Project Gyaan</a>
+      <a href="sakhi.html" onclick="closeMob()">Project Sakhi</a>
+      <a href="swasth.html" onclick="closeMob()">Project Swasth</a>
+      <a href="pashu.html" onclick="closeMob()">Project Pashu</a>
+      <a href="Paryavaran.html" onclick="closeMob()">Project Paryavaran</a>
+    </div>
+  </div>
+
+ <!-- Get Involved -->
+
+  <div class="mob-dropdown">
+  <button type="button" class="mob-drop-btn">
+    Get Involved <i class="fas fa-chevron-down"></i>
+  </button>
+
+  <div class="mob-drop-content">
+    <a href="../get-involved/individual-support.html" onclick="closeMob()">Individual Support</a>
+    <a href="../get-involved/corporate-partnership.html" onclick="closeMob()">Corporate Partnership</a>
+    <a href="../get-involved/donate-online.html" onclick="closeMob()">Donate Online</a>
+    <a href="../get-involved/career.html" onclick="closeMob()">Career</a>
+  </div>
+</div>
+
+
+ <!-- Media-->
+
+  <a href="#media" onclick="closeMob()">Media</a>
+
+ <!-- Contact -->
+
+<div class="mob-dropdown">
+  <button type="button" class="mob-drop-btn">
+    Contact <i class="fas fa-chevron-down"></i>
+  </button>
+
+  <div class="mob-drop-content">
+    <a href="get-in-touch.html" onclick="closeMob()">Get In Touch</a>
+    <a href="privacy-policy.html" onclick="closeMob()">Privacy Policy</a>
+  </div>
+</div>
+
+  <a href="#donate" class="mob-donate" onclick="closeMob()">Donate Now</a>
+
+</div>
+
 
   <br><br>
 
@@ -536,7 +600,7 @@
         <!-- GPay QR Section -->
         <div class="gpay-qr">
         <p><i class="fas fa-qrcode"></i> Scan & Pay via GPay</p>
-        <img src="images/gpay-qr.png" alt="GPay QR Code" class="gpay-img">
+        <img src="gpay-qr.jpeg" alt="GPay QR Code" class="gpay-img">
         </div>
 
 
