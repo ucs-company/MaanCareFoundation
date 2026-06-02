@@ -31,7 +31,7 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 
 body {
   font-family: var(--font-body);
@@ -1238,6 +1238,7 @@ background: linear-gradient(
   .contact-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
+  .navbar { backdrop-filter: none; background: #fff; }
   .nav-links, .nav-donate { display: none; }
   .burger { display: block; }
   .hero { padding: 100px 20px 60px; }
@@ -1424,6 +1425,7 @@ background: linear-gradient(
     text-align: center;
     min-height: auto;
     gap: 30px;
+    overflow: hidden;
   }
 
   .hero-content{
