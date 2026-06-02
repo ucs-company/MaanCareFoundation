@@ -127,16 +127,21 @@ function handleDonate() {
   const activeBtn = document.querySelector('.amt-btn.active');
   const project = document.getElementById('projSelect').value;
 
-  let amount = customAmt || (activeBtn ? activeBtn.textContent : '₹1,000');
+  let amount = customAmt || (activeBtn ? activeBtn.textContent.replace(/[^0-9]/g, '') : '1000');
   if (customAmt && !isNaN(customAmt) && Number(customAmt) > 0) {
-    amount = '₹' + Number(customAmt).toLocaleString('en-IN');
+    amount = customAmt;
   }
 
-  const projectText = project ? ` for ${project}` : '';
-  document.getElementById('modalMsg').textContent =
-    `Your generous donation of ${amount}${projectText} will help transform lives across India. We will reach out to confirm your contribution shortly.`;
+  if (Number(amount) < 1) {
+    alert('Please enter a valid donation amount');
+    return;
+  }
 
-  openModal();
+  if (typeof processDonation === 'function') {
+    processDonation(amount, project);
+  } else {
+    alert('Payment system loading. Please try again.');
+  }
 }
 
 // -------- CONTACT FORM --------
