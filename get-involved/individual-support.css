@@ -244,6 +244,46 @@ body {
 }
 
 
+/* ===== SLIDE IMAGE ===== */
+/* ===== HERO SLIDER WRAPPER ===== */
+
+
+
+.mc-hero-slider{
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+
+.mc-slide,
+.mc-slide picture,
+.mc-slide img{
+   width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+}
+
+.mc-slide img{
+  object-fit: cover;
+  object-position: center;
+
+  /* no animation */
+  animation: none !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+/* MOBILE HEIGHT */
+@media (max-width: 768px){
+  .mc-hero-slider{
+    height: 450px;
+  }
+
+  .mc-slide img{
+    object-position: center top;
+  }
+}
 
 /* <!-- ========================= */
      INDIVIDUAL SUPPORT HERO
