@@ -659,3 +659,12 @@ body {
   margin-top:5px;
   border:2px solid #fff;
 }
+
+/* new mobile */
+.mob-drop-content{
+  display:none;
+}
+
+.mob-dropdown.active .mob-drop-content{
+  display:block;
+}

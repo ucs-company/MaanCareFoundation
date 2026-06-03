@@ -39,6 +39,12 @@ burger.addEventListener('click', () => {
 function closeMob() {
   mobileMenu.classList.remove('open');
 }
+// new
+document.querySelectorAll(".mob-drop-btn").forEach(btn => {
+  btn.addEventListener("click", function () {
+    this.parentElement.classList.toggle("active");
+  });
+});
 
 // -------- SMOOTH SCROLL --------
 document.querySelectorAll('a[href^="#"]').forEach(a => {
