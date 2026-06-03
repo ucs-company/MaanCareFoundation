@@ -1694,3 +1694,38 @@ background: linear-gradient(
 .whatsapp:hover {
   transform: scale(1.1);
 }
+
+
+
+/* donet */
+.donor-fields{
+  margin-bottom:16px;
+}
+
+.name-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-bottom:12px;
+}
+
+@media(max-width:576px){
+  .name-row{
+    grid-template-columns:1fr;
+  }
+}
+
+/* Dropdown Open Style */
+#projSelect{
+  color:#fff;
+  font-weight:600;
+}
+
+#projSelect option{
+  background:#fff;
+  color:var(--pink);
+  font-weight:600;
+}
+
+
+

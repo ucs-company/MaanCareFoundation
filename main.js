@@ -337,6 +337,56 @@ document.querySelectorAll('.mob-drop-btn').forEach(btn => {
 });
 
 
+// donet
 
+function handleDonate() {
 
+  const firstName = document.getElementById('firstName').value.trim();
+  const lastName = document.getElementById('lastName').value.trim();
+  const contactNo = document.getElementById('contactNo').value.trim();
+
+  const customAmt = document.getElementById('customAmt').value;
+  const activeBtn = document.querySelector('.amt-btn.active');
+  const project = document.getElementById('projSelect').value;
+
+  if (!firstName) {
+    alert('Please enter First Name');
+    return;
+  }
+
+  if (!lastName) {
+    alert('Please enter Last Name');
+    return;
+  }
+
+  if (!/^[6-9]\d{9}$/.test(contactNo)) {
+    alert('Please enter a valid 10-digit Contact Number');
+    return;
+  }
+
+  let amount = customAmt || (activeBtn ? activeBtn.textContent.replace(/[^0-9]/g, '') : '1000');
+
+  if (customAmt && !isNaN(customAmt) && Number(customAmt) > 0) {
+    amount = customAmt;
+  }
+
+  if (Number(amount) < 1) {
+    alert('Please enter a valid donation amount');
+    return;
+  }
+
+  if (typeof processDonation === 'function') {
+
+    processDonation({
+      firstName,
+      lastName,
+      contactNo,
+      amount,
+      project
+    });
+
+  } else {
+    alert('Payment system loading. Please try again.');
+  }
+}
 
