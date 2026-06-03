@@ -889,6 +889,124 @@ background: linear-gradient(
 }
 .proj-donate-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(233,30,140,0.45); }
 
+
+
+/* ===== GET INVOLVED ===== */
+
+.get-involved{
+  background: linear-gradient(135deg, var(--pink-pale), var(--white));
+  padding: 100px 0;
+}
+
+.get-involved-content{
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+.get-lead{
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--pink);
+  margin-bottom: 15px;
+}
+
+.get-body{
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.involve-cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 25px;
+}
+
+.involve-card{
+  background: var(--white);
+  padding: 35px 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(233,30,140,0.08);
+  transition: all .35s ease;
+  border: 1px solid rgba(233,30,140,0.08);
+}
+
+.involve-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(233,30,140,0.15);
+}
+
+.involve-card i{
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  border-radius: 50%;
+  background: var(--pink-light);
+  color: var(--pink);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.involve-card h3{
+  font-size: 1.4rem;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.involve-card p{
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.involve-card a{
+  display: inline-block;
+  text-decoration: none;
+  background: var(--grad);
+  color: var(--white);
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all .3s ease;
+}
+
+.involve-card a:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(233,30,140,0.25);
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+  .get-involved{
+    padding: 70px 0;
+  }
+
+  .get-lead{
+    font-size: 1.6rem;
+  }
+
+  .get-body{
+    font-size: 0.95rem;
+  }
+
+  .involve-card{
+    padding: 30px 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
 /* -------- Cause you can Support -------- */
 
 *{
