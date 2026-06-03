@@ -315,9 +315,6 @@ function autoSlide(){
 }
 
 setInterval(autoSlide,4000);
-
-
-
 // careerForm
 
 document.getElementById("careerForm").addEventListener("submit", function(e){

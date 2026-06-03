@@ -505,7 +505,7 @@ body {
 
 .gpay-img{
   width:120px;
-  height:120px;
+  height:220px;
   object-fit:cover;
   border-radius:10px;
   margin-top:5px;
@@ -519,4 +519,44 @@ body {
 
 .mob-dropdown.active .mob-drop-content{
   display:block;
+}
+
+/* ===== HERO SLIDER WRAPPER ===== */
+
+
+
+.mc-hero-slider{
+  width: 100%;
+  height: 555px;
+  overflow: hidden;
+}
+
+.mc-slide,
+.mc-slide picture,
+.mc-slide img{
+   width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+}
+
+.mc-slide img{
+  object-fit: cover;
+  object-position: center;
+
+  /* no animation */
+  animation: none !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+/* MOBILE HEIGHT */
+@media (max-width: 768px){
+  .mc-hero-slider{
+    height: 450px;
+  }
+
+  .mc-slide img{
+    object-position: center top;
+  }
 }
