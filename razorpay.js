@@ -2,7 +2,7 @@
 // RAZORPAY PAYMENT INTEGRATION
 // =============================================
 // Replace with your LIVE Razorpay Key ID
-const RAZORPAY_KEY = 'rzp_test_SwlR4kY8I8I37w';
+const RAZORPAY_KEY = 'rzp_live_T6E5N32OqCETWZ';
 
 async function processDonation(amount, project) {
   if (typeof Razorpay === 'undefined') {
@@ -41,7 +41,7 @@ async function processDonation(amount, project) {
       project: project || 'General'
     },
     theme: {
-      color: '#e91e8c'
+      color: '#973247'
     },
     modal: {
       ondismiss: function () {
